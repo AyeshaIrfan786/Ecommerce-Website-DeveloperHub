@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Frontend</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Brand</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <select>
+        <option>All category</option>
+          <option>Clothing</option>
+     <option>Electronics</option>
+  <option>Home & Outdoor</option>
+      </select>
+      <button>Search</button>
+    </div>
+    <div class="profile">
+     
+      <a href="#">Profile</a>
+      <a href="#">Messages</a>
+      <a href="#">Orders</a>
+      <a href="#">My cart</a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#">All category</a></li>
+      <li><a href="#">Hot offers</a></li>
+      <li><a href="#">Gift boxes</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Menu item</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+
+    <!-- Sidebar Filters -->
+     <section>
+                    <aside class="sidebar">
+                        <div class="filter-group">
+                            <h3 class="filter-title">Category</h3>
+                            <ul class="filter-list">
+                                <li class="filter-item active"><a href="#">Mobile accessory</a></li>
+                                <li class="filter-item"><a href="#">Electronics</a></li>
+                                <li class="filter-item"><a href="#">Smartphones</a></li>
+                                <li class="filter-item"><a href="#">Modern tech</a></li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                          <div class="filter-group">
+                            <h3 class="filter-title">Brands</h3>
+                            <ul class="filter-list checkbox-list">
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="samsung">
+                                        <span class="checkbox-text">Samsung</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="apple">
+                                        <span class="checkbox-text">Apple</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="huawei">
+                                        <span class="checkbox-text">Huawei</span>
+                                    </label>
+                                </li>
+                        
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="lenovo">
+                                        <span class="checkbox-text">Lenovo</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Features</h3>
+                            <ul class="filter-list checkbox-list">
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="metallic">
+                                        <span class="checkbox-text">Metallic</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="plastic-cover">
+                                        <span class="checkbox-text">Plastic cover</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="8gb-ram">
+                                        <span class="checkbox-text">8GB Ram</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="super-power">
+                                        <span class="checkbox-text">Super power</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="large-memory">
+                                        <span class="checkbox-text">Large Memory</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price range</h3>
+                            <div class="price-range-slider">
+                                <!-- Price range slider would be implemented with JavaScript -->
+                                <div class="price-range-track"></div>
+                                <div class="price-range-handle"></div>
+                                <div class="price-range-handle"></div>
+                            </div>
+                            <div class="price-inputs">
+                                <div class="price-input">
+                                    <label>Minimum</label>
+                                    <input type="text" placeholder="0 $">
+                                </div>
+                                <div class="price-input">
+                                    <label>Maximum</label>
+                                    <input type="text" placeholder="999 $">
+                                </div>
+                                <button class="btn-apply">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Condition</h3>
+                            <ul class="filter-list radio-list">
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="any" checked>
+                                        <span class="radio-text">Any</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="refurbished">
+                                        <span class="radio-text">Moderate</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="brand-new">
+                                        <span class="radio-text">Brand new</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="old-items">
+                                        <span class="radio-text">Old items</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Customer review</h3>
+                            <ul class="filter-list radio-list">
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        
+                                         <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                    </label>   
+                                </aside>   
+                            </section>  
+
+                                 <!--Items Container-->
+    <section id="items-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="sidebar-section">
+              <p class ="para">12,9111 items in <span>mobile accessories</span></p>
+              <div class ="items-container">
+              <div class="product-header">
+                <div class="sort-options">
+                  <label for="sort">Sort by:</label>
+                  <select id="sort">
+                    <option value="popularity">Popularity</option>
+                    <option value="rating">Average rating</option>
+                    <option value="newness">Newness</option>
+                    <option value="price-low-high">Price: low to high</option>
+                    <option value="price-high-low">Price: high to low</option>
+                  </select>
+                </div>
+              
+                 
+                  <button class="view-modes">List View</button>
+  </div> 
+
+<div class = "main-product">
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/image%202.jpg" alt="Product 1">
+          <div class="remain">
+          <p>Iphone 13 pro Original</p>
+          <h3>Smartphone XYZ</h3>
+          <p class="price">$299.99</p>
+          <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/imggg%205%20(1).jpg" alt="Product 2">
+          <div class="remain">
+            <p>Smart Watch Original</p>
+          <h3>Smartwatch ABC</h3>
+          <p class="price">$399.99</p>
+           <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+         
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/image%204.jpg" alt="Product 3">
+         <div class="remain">
+          <p>Headset Original</p>
+          <h3>HeadSet</h3>
+          <p class="price">$499.99</p>
+           <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+         
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/image%203.jpg" alt="Product 4">
+           <div class="remain">
+            <p>Iphone 13 pro Original</p>
+          <h3>Smartphone GHI</h3>
+          <p class="price">$599.99</p>
+           <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+        </div>
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/img%206.jpg" alt="Product 5">
+          <div class="remain">
+            <p>Camera Original</p>
+          <h3>Camera</h3>
+          <p class="price">$699.99</p>
+           <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+          
+        <div class="product-card">
+          <img src="file:///C:/Users/sh/Downloads/imggg%206.jpg" alt="Product 6">
+          <div class="remain">
+          <h3>Smartphone MNO</h3>
+
+          <p class="price">$799.99</p>
+         <div class ="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                                         </div>
+                                         <p>Lorem ipsum dolor sit amet consectetur,<br>
+                                             adipisicing elit. ReiciAd nulla ratione arc</p>
+                <a href="#" class="review-link"> 4.5 (23 reviews)</a>
+                <a href ="#" class ="detail-link"> See details</a>
+                <br>
+                <br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+
+
+          
+
+
+  <!-- 1. Show 10 -->
+  <section class="show-ten">
+    <label>Show 
+      <select>
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+      </select>
+    </label>
+  </section>
+
+  <!-- 2. Pages -->
+  <section class="pages">
+    <a href="#">«</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">»</a>
+  </section>
+
+  <!-- 3. Newspapers (Newsletter) -->
+   <div class="container1">
+  <section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- 4. Footer (Links, Social, Brand, Apps) -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <h2>Brand</h2>
+        <p>Best information about the company gets here but now lorem ipsum is</p>
+        <div class="social-icons">
+          <a href="#">🌐</a>
+          <a href="#">👍</a>
+          <a href="#">💼</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class="footer-links">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Find Store</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Partnership</h4>
+        <ul>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Find Partner</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Shops</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Money Refund</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>For Users</h4>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">My Orders</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="apps">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+       
+      </div>
+      <div class="language">🌎 English</div>
+      <div class="copyright">© 2023 Ecommerce</div>
+    </div>
+  </footer>
+  </div>
+</section>
+
